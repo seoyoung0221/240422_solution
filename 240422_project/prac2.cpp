@@ -2,15 +2,28 @@
 
 int main()
 {
-	std::cout << "이름을 입력하세요. \n";
-	std::string name;
-	std::cin >> name;
-
-	std::cout << "나이를 입력하세요. \n";
+	std::cout << "나이를 입력하세요.";
 	int old;
 	std::cin >> old;
 
-	std::cout << "안녕하세요!" << name << "님 (" << old << "세)";
 
-	return 0;
+	if (old <= 7)
+	{
+		std::cout << "유아";
+	} else if (old <= 13)
+	{
+		std::cout << "초등학생";
+	} else if (old <= 16)
+	{
+		std::cout << "중학생";
+	} else if (old <= 19)
+	{
+		std::cout << "고등학생";
+	} else if (old >= 20)
+	{
+		std::cout << "성인";
+	} else if (old >= 200)
+	{
+		std::cout << "나이가 너무 많습니다.";
+	}
 }
